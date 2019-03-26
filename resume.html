@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/vcard_button.css">
+		<style>
+			body {
+				position: fixed;
+				background: rgba(255,204,2,0.2);
+			}
+			.front_back,
+			.back_color {
+				position: fixed;
+				pointer-events: none;
+				visibility: visible;
+				top: -1vh;
+				left: -1vw;
+				width: 101vw;
+				height: 101vh;
+				background-color: rgba(27,130,214,1);
+				transition: 2s;
+				z-index: 0;
+			}
+
+			.back_color {
+				pointer-events: auto;
+				background-color: rgba(255,255,255,0);
+			}
+			.loader {
+				position: fixed;
+				pointer-events: none;
+				visibility: visible;
+				z-index: 20;
+				top: -1vh;
+				left: -1vw;
+				transition: 1s;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 100em 100em 100em 100em; /* размер и форма */ 
+				border-color: rgba(255,204,2,1) transparent transparent rgba(255,204,2,1);  /* red — цвет */ 
+
+			}
+
+			body:hover .loader{
+				opacity: 0;
+				/*transform: scale(0);*/
+				top: -100vh;
+				left: -100vw;
+
+			}
+			body:not(:hover) .loader {
+				transition: 99999s;
+			}
+			.vCard {
+				position: absolute;
+				left: 35vw;
+				top: 35vh;
+				width: 30vw;
+				height: 30vh;
+				color: white;
+				background-color: rgba(30,87,153,1);
+				border: 0px solid blue;
+				border-radius: 5px;
+				-webkit-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75), inset 0px 0px 32px -1px rgba(255,255,255,0.1);
+				-moz-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75), inset 0px 0px 32px -1px rgba(255,255,255,0.1);
+				box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75), inset 0px 0px 32px -1px rgba(255,255,255,0.1);
+				padding: 1vw;
+				transition: 0.7s;
+				z-index: 1;
+			}
+			.hi_button {
+				position: absolute;
+				bottom: 1vh;
+				left: 1vw;
+				width: 8vw;
+				height: 3vh;
+				background-color: rgba(255,204,2,1);
+				padding-top: 1vh;
+				padding-left: 1vw;
+				z-index: 3;
+			}
+			
+			.face_img {
+				position: relative;
+				height: 15vh;
+				display: inline-block;
+				border: 0px solid blue;
+				border-radius: 0px;
+				line-height: 0;
+				-webkit-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.8), inset 0px 0px 32px -1px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.8), inset 0px 0px 32px -1px rgba(0,0,0,0.75);
+				box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.8), inset 0px 0px 32px -1px rgba(0,0,0,0.75);
+				transition: 1s;
+				z-index: 2;
+			}
+			.vcard_button {
+				pointer-events: auto;
+			}
+	
+			
+			input[type="checkbox"] {
+				display: none;
+			}
+
+
+			a ~ .vcard_button {
+				color: white;
+				font-size: 1em;
+				text-decoration: none;
+			}
+
+			
+
+
+			
+		</style>
+	</head>
+	<body>
+		<div class="loader"></div>
+		<!-- Ниже меню страницы -->
+		<input type="checkbox" id="menu_info">
+		<a href="D:\1c_pd\other_test\work\contact.html">
+			<label class="contact_button" for="vontact_info">
+				Contact	|	Social Media
+			</label>
+		</a>
+		<a href="D:\1c_pd\other_test\work\evolve.html">
+			<label class="evolve_button" for="evolve_info">
+				School	|	University	|	Jobs
+			</label>
+		</a>
+		<a href="D:\1c_pd\other_test\work\skills.html">
+			<label class="skills_button" for="skills_info">
+			Certificate	|	Professional skills
+			</label>
+		</a>
+		<a href="D:\1c_pd\other_test\work\resume.html">
+			<label class="resume_button" for="resume_info">
+				Resume
+			</label>
+		</a>
+		<label class="menu_button" for="menu_info">&#9776;</label>
+<!-- 		<form action="/index v2.html">
+			<button type="submit" class="vcard_button">vCard</button>
+		</form> -->
+
+		<a href="D:\1c_pd\other_test\work\index v2.html" class="vcard_button">vCard</a>
+		<!-- Выше меню страницы -->
+		<div class="back_color"></div>
+		
+
+
+	</body>
+</html>
