@@ -3226,7 +3226,14 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-image: url(images/step3_back.svg);
+			background-color: #ffffff;
+			color: #000000;
+		}
+		
+		.wrapper.style1	label,
+		.wrapper.style1 h2, 
+		.wrapper.style1 h3 {
+   			color: #000000;
 		}
 
 		.wrapper.style1-alt {
@@ -3720,7 +3727,7 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: rgba(0, 0, 0, 0.35);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3764,7 +3771,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: #000000;
 			}
 
 				#sidebar nav a.active:after {
