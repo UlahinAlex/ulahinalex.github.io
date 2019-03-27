@@ -1833,11 +1833,11 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease;
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
-		background-color: transparent;
+		background-color: rgba(0, 0, 0, 0.05);
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(0, 0, 0, 0.15) !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #000000!important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
