@@ -40,7 +40,7 @@
     border-radius: 0%;
     border: 0px solid #ffa500;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-    background-image: url(D://1c_pd/test2/images/stop_back.svg);
+    background-image: url(/images/stop_back.svg);
     background-color: rgba(245, 119, 10, 1);
 }
 

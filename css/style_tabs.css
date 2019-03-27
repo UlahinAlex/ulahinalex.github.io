@@ -70,36 +70,36 @@ p {
 }
 
 label[for*='1']:before {
-  content: url('D://1c_pd/images/vendors/k_lab_m.png');
+  content: url('images/vendors/k_lab_m.png');
 
 }
 
 label[for*='2']:before {
-  content: url('D://1c_pd/images/vendors/microsoft_m.png');
+  content: url('images/vendors/microsoft_m.png');
 }
 
 label[for*='3']:before {
-  content: url('D://1c_pd/images/vendors/ngt_m.png');
+  content: url('images/vendors/ngt_m.png');
 }
 
 label[for*='4']:before {
-  content: url('D://1c_pd/images/vendors/bia_m.png');
+  content: url('images/vendors/bia_m.png');
 }
 
 label[for*='5']:before {
-  content: url('D://1c_pd/images/vendors/dl_m.png');
+  content: url('images/vendors/dl_m.png');
 }
 
 label[for*='6']:before {
-  content: url('D://1c_pd/images/vendors/as_m.png');
+  content: url('images/vendors/as_m.png');
 }
 
 label[for*='7']:before {
-  content: url('D://1c_pd/images/vendors/ibm_m.png');
+  content: url('images/vendors/ibm_m.png');
 }
 
 label[for*='8']:before {
-  content: url('D://1c_pd/images/vendors/ug_m.png');
+  content: url('images/vendors/ug_m.png');
 }
 
 label:hover {
