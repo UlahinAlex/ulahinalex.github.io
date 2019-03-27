@@ -36,18 +36,13 @@
 				width: 0;
 				height: 0;
 				border-style: solid;
+				animation: pre-loader 1.5s ease 1 forwards;
 				border-width: 100em 100em 100em 100em; /* размер и форма */ 
 				border-color: rgba(255,204,2,1) transparent transparent rgba(255,204,2,1);  /* red — цвет */ 
 
 			}
 
-			body:hover .loader{
-				opacity: 0;
-				/*transform: scale(0);*/
-				top: -100vh;
-				left: -100vw;
 
-			}
 			body:not(:hover) .loader {
 				transition: 99999s;
 			}
@@ -109,10 +104,18 @@
 				text-decoration: none;
 			}
 
-			
-
-
-			
+			@keyframes pre-loader {
+				from { 
+					top: -1vh;
+					left: -1vw;
+				} 
+				to {
+					opacity: 0;
+				/*transform: scale(0);*/
+					top: -100vh;
+					left: -100vw;
+				}
+			}
 		</style>
 	</head>
 	<body>
