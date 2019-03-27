@@ -99,7 +99,7 @@ input, select, textarea {
 
 	body {
 		/*background: #ffef23;*/
-		background-image: url(images/intro_1.svg) no-repeat; 
+		background-image: url(images/intro_1.svg); 
 		background-size: cover;
 	}
 
@@ -1837,7 +1837,7 @@ input, select, textarea {
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		border-radius: 3em;
-		color: #000000 !important;
+		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
