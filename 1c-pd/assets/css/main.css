@@ -3226,7 +3226,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background: url(/images/step3_back.svg);
+			background-image: url(images/step3_back.svg);
 		}
 
 		.wrapper.style1-alt {
