@@ -2523,7 +2523,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #5052b5;
+					color: #a9a9a9;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
@@ -2531,7 +2531,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #ff7f00;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3226,7 +3226,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background: url(assets/css/images/step3_back.svg);
 		}
 
 		.wrapper.style1-alt {
@@ -3234,7 +3234,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #a9a9a9;
 		}
 
 		.wrapper.style2-alt {
@@ -3242,7 +3242,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #ff7f00;
 		}
 
 		.wrapper.style3-alt {
@@ -3748,10 +3748,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #ffeb00, #ff0000);
+				background-image: -webkit-linear-gradient(to right, #ffeb00, #ff0000);
+				background-image: -ms-linear-gradient(to right, #ffeb00, #ff0000);
+				background-image: linear-gradient(to right, #ffeb00, #ff0000);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3840,7 +3840,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #000000;
 						}
 
 		}
