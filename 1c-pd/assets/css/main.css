@@ -3768,6 +3768,7 @@ input, select, textarea {
 
 			#sidebar nav a:hover {
 				color: rgba(255, 235, 34, 1);
+				font-weight: bold;
 			}
 
 			#sidebar nav a.active {
