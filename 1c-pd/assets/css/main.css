@@ -3770,7 +3770,7 @@ input, select, textarea {
 
 			#sidebar nav a:hover {
 				color: rgba(255, 235, 34, 1);
-				font-weight: bold;
+				font-size: 0.8em;
 			}
 
 			#sidebar nav a.active {
