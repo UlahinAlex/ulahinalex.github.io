@@ -1,189 +1,318 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="css/menu.css">
-		<link rel="stylesheet" href="css/vcard_button.css">
-		<style>
-			body {
-				position: fixed;
-				background: rgba(255,204,2,0.2);
-			}
-			.front_back,
-			.back_color {
-				position: fixed;
-				pointer-events: auto;
-				visibility: visible;
-				top: -1vh;
-				left: -1vw;
-				width: 101vw;
-				height: 101vh;
-				background-color: rgba(27,130,214,1);
-				transition: 2s;
-				z-index: 11;
-			}
+<head>
+	<title>1С:Проектная Дистрибьюция</title>
 
-			.back_color {
-				background-color: rgba(255,255,255,0);
-				z-index: 9;
-			}
-			.loader {
-				position: fixed;
-				pointer-events: none;
-				visibility: visible;
-				z-index: 20;
-				top: -1vh;
-				left: -1vw;
-/*				transition: 1s;*/
-				width: 0;
-				height: 0;
-				border-style: solid;
-				animation: pre-loader 1.5s ease 1 forwards;
-				border-width: 100em 100em 100em 100em; /* размер и форма */ 
-				border-color: rgba(27,130,214,1) transparent transparent rgba(27,130,214,1);/* red — цвет */ 
-			}
+	<!-- Стили новосного слайдера -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+	<link rel="stylesheet" href="css/news_slider.css">
+	<!-- Стили новосного слайдера -->
+
+	<!-- Стили логотипов символами -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+	<!-- Стили логотипов символами -->
+
+	<!-- Стиль вкладок -->
+	<link href="css/info_tab.css" rel="stylesheet">
+	<!-- Стиль вкладок -->
+
+	<!-- Основной стиль -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- А так же сетка 12 столбцов на 5 линий -->
+	<link href="css/cage_12x5.css" rel="stylesheet">
+	<!-- Основной стиль -->
+
+	<link href="css/roadmap.css" rel="stylesheet">
 
 
-			.vCard {
-				position: absolute;
-				left: 35vw;
-				top: 35vh;
-				width: 30vw;
-				height: 30vh;
-				color: white;
-				background-color: rgba(30,87,153,1);
-				border: 0px solid blue;
-				border-radius: 5px;
-				-webkit-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75), inset 0px 0px 32px -1px rgba(255,255,255,0.1);
-				-moz-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75), inset 0px 0px 32px -1px rgba(255,255,255,0.1);
-				box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75), inset 0px 0px 32px -1px rgba(255,255,255,0.1);
-				padding: 1vw;
-				transition: 0.7s;
-				z-index: 12;
-			}
-			.hi_button {
-				position: absolute;
-				bottom: 1vh;
-				left: 1vw;
-				width: 8vw;
-				height: 3vh;
-				background-color: rgba(255,204,2,1);
-				padding-top: 1.5vh;
-				padding-left: 1vw;
-				padding-right: 1vw;
-				z-index: 14;
-				font-size: 80%;
-				color: black;
-			}
-			
-			.face_img {
-				position: relative;
-				height: 15vh;
-				display: inline-block;
-				border: 0px solid blue;
-				border-radius: 0px;
-				line-height: 0;
-				-webkit-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.8), inset 0px 0px 32px -1px rgba(0,0,0,0.75);
-				-moz-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.8), inset 0px 0px 32px -1px rgba(0,0,0,0.75);
-				box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.8), inset 0px 0px 32px -1px rgba(0,0,0,0.75);
-				transition: 1s;
-				z-index: 13;
-			}
 
-			#More_info:checked ~ .vCard {
-				opacity: 0;
-				transform: scale(0.7);
-			}
-			#More_info:checked ~ .vCard > .hi_button {
-				pointer-events: none;
-			}
-			#More_info:checked ~ .vCard + .front_back {
-				opacity: 0;
-				pointer-events: none;
-				/*transform: scale(0);*/
-			}
-			#More_info:checked ~ .vcard_button {
-				opacity: 1;
-				pointer-events: auto;
-			}
-			#More_info:checked ~ .back_color {
-				background-color: rgba(255,204,2,0.2);
-				pointer-events: none;
 
-			}
+	<style type="text/css">
 
-			input[type="checkbox"] {
-				display: none;
-			}
-			table {
-				color: white;
-			}
+		.road_call {
+			left: 3vw;
+  			color: rgba(255, 144, 0, 0);
+  			background-image: url("d://1c_pd/test2/images/call.png");
+  			background-size: contain;
+		}
+		.road_tz {
+			left: 18vw;
+			top: -16vh;
+  			color: rgba(255, 144, 0, 0);
+  			background-image: url("d://1c_pd/test2/images/tz.png");
+  			background-size: contain;
+		}
+		.road_job {
+			left: 33vw;
+			top: -31.5vh;
+  			color: rgba(255, 144, 0, 0);
+  			background-image: url("d://1c_pd/test2/images/job.png");
+  			background-size: contain;
+		}
+		.road_help {
+			left: 48vw;
+			top: -47.5vh;
+  			color: rgba(255, 144, 0, 0);
+  			background-image: url("d://1c_pd/test2/images/help.png");
+  			background-size: contain;
+		}
+/*
+		@media screen and (max-width: 1025px) {
+		  .road_tz {
+		  	top: -10vh;
+		  }
 
-			@keyframes pre-loader {
-				from { 
-					top: -1vh;
-					left: -1vw;
-				} 
-				to {
-					opacity: 0;
-				/*transform: scale(0);*/
-					top: -100vh;
-					left: -100vw;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<!-- Гениальный прелоадер на CSS -->
-		<div class="loader"></div>
-		<!-- Гениальный прелоадер на CSS -->
+		  .road_job,
+		  .road_help {
+		  	left: 0%;
+		  	top: -20vh;
+
+		  }
+		}
+		@media screen and (max-width: 761px) {
+		  .road_map {
+		    left: 0;
+		    top: 100vh;
+		  }
+		  .road_stop {
+		    margin-right: 5vw;
+		  }
+		}
+		@media screen and (max-width: 361px) {
+		  .road_map {
+		    left: 0;
+		    top: 200vh;
+		  }
+		  .road_stop {
+		    margin-right: 5vw;
+		  }
+		}*/
+
+	</style>
+</head>
+<body>
+	<main>
+		<div class="cage_1_1">
+			<div id="container" class="slider">
+				<ul id="slides">
+					<li class="slide">
+						<div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/forest-left.jpg"/></div>
+						<div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/forest-right.jpg"/></div>
+						<h1 class="title"><span class="title-text">Forest</span></h1>
+					</li>
+					<li class="slide">
+						<div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/mountain-left.jpg"/></div>
+						<div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/mountain-right.jpg"/></div>
+						<h1 class="title"><span class="title-text">Mountain</span></h1>
+					</li>
+					<li class="slide">
+						<div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/ocean-left.jpg"/></div>
+						<div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/ocean-right.jpg"/></div>
+						<h1 class="title"><span class="title-text">Ocean</span></h1>
+					</li>
+					<li class="slide">
+						<div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/canyon-left.jpg"/></div>
+						<div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/canyon-right.jpg"/></div>
+						<h1 class="title"><span class="title-text">Canyon</span></h1>
+					</li>
+					<li class="slide">
+						<div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/lake-left.jpg"/></div>
+						<div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/lake-right.jpg"/></div>
+						<h1 class="title"><span class="title-text">Lake</span></h1>
+					</li>
+				</ul>
+				<ul id="slide-select">
+					<li class="btn prev"><</li>
+					<li class="selector"></li>
+					<li class="selector"></li>
+					<li class="selector"></li>
+					<li class="selector"></li>
+					<li class="selector"></li>
+					<li class="btn next">></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class='tab_container_1'>
+
+		  <div class='flip_box_1'>
+
+		    <div class='front'>
+		      <p class='f_title'>Облачные решения</p>
+				<img src="images/doc_logo.png" alt="" class="logo_tab">
+		      <p class='f_subline'></p>
+		      <h1 class='f_headline'>Кратка формулировка</h1>
+		    </div>
+
+		    <div class='back_1'>
+		      <h1 class='b_headline'>Облачные решения</h1>
+		      <p class='b_text'>Comprehensive insurance of apartments<br />including structural elements, decoration,<br /> equipment, property and responsibility<br />to neighbors in the expanded package<br />insurance risks</p>
+		    </div>
+
+		  </div>
+
+		  <div class='r_wrap'>
+
+		    <div class='b_round_1'></div>
+		    <div class='s_round_1'>
+		      <div class='s_arrow_1'></div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class='tab_container_2'>
+
+		  <div class='flip_box_2'>
+
+		    <div class='front'>
+		      <p class='f_title'>Проектные решения</p>
+		      <img src="images/volm_logo.png" alt="" class="logo_tab">
+		      <p class='f_subline'></p>
+		      <h1 class='f_headline'>Краткое описание</h1>
+		    </div>
+
+		    <div class='back_2'>
+		      <h1 class='b_headline'>Проектные решения</h1>
+		      <p class='b_text'>Comprehensive insurance of apartments<br />including structural elements, decoration,<br /> equipment, property and responsibility<br />to neighbors in the expanded package<br />insurance risks</p>
+		    </div>
+
+		  </div>
+
+		  <div class='r_wrap'>
+
+		    <div class='b_round_2'></div>
+		    <div class='s_round_2'>
+		      <div class='s_arrow_2'></div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class='tab_container_3'>
+
+		  <div class='flip_box_3'>
+
+		    <div class='front'>
+		      <p class='f_title'>Информационная безопасность</p>
+		      <img src="images/def_logo.png" alt="" class="logo_tab">
+		      <p class='f_subline'></p>
+		      <h1 class='f_headline'>Краткое описание</h1>
+		    </div>
+
+		    <div class='back_3'>
+		      <h1 class='b_headline'>Информационная безопасность</h1>
+		      <p class='b_text'>Comprehensive insurance of apartments<br />including structural elements, decoration,<br /> equipment, property and responsibility<br />to neighbors in the expanded package<br />insurance risks</p>
+		    </div>
+
+		  </div>
+
+		  <div class='r_wrap'>
+
+		    <div class='b_round_3'></div>
+		    <div class='s_round_3'>
+		      <div class='s_arrow_3'></div>
+		    </div>
+		  </div>
+		</div>
+		<div class="road_map">
+			<div class="road_stop road_call">Заголовок<br>Всякий, описывающий этап, текст<br>Возможно картинка</div>
+
+			<div class="road_stop road_tz">Заголовок<br>Всякий, описывающий этап, текст<br>Возможно картинка</div>
+
+			<div class="road_stop road_job">Заголовок<br>Всякий, описывающий этап, текст<br>Возможно картинка</div>
+
+			<div class="road_stop road_help">Заголовок<br>Всякий, описывающий этап, текст<br>Возможно картинка</div>
+		</div>
+		<div class="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5f940e70571cdec71e3dfddc7376248728289987d2eec75320d3010669d077c1&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div> 
+	</main>
+	<ul class='social'>
+		<li>
+			<a class="fa fa-facebook" href="#">		
+				<span>Facebook</span>
+			</a> 
+		</li>
 		
-		<input type="checkbox" id="More_info">
-		<div class="vCard">
-			<table width="100%">
-				<tr>
-					<td>
-						<h1>Уляхин Александр<br></h1>
-						24 года, аспирант Университета ИТМО.<br>
-						Специальность "Информационная безопасность".<br>
-						Работает в 1С:Северо-Запад.<br>
-						Характер скверны, женат.<br>
-					</td>
-					<td>
-						<img class="face_img" src="img/my_face.jpg" align="right">
-					</td>
-				</tr>
-			</table>
-			
-			<label class="hi_button" for="More_info"><img src="\img\more_button.png" width="100%"></label>
-			
-		</div>	
-		<div class="front_back"></div>
-		<!-- Ниже меню страницы -->
-		<input type="checkbox" id="menu_info">
-		<a href="\contact.html">
-			<label class="contact_button" for="vontact_info">
-				Contact	|	Social Media
-			</label>
-		</a>
-		<a href="\evolve.html">
-			<label class="evolve_button" for="evolve_info">
-				School	|	University	|	Jobs
-			</label>
-		</a>
-		<a href="\skills.html">
-			<label class="skills_button" for="skills_info">
-			Certificate	|	Professional skills
-			</label>
-		</a>
-		<a href="\resume.html">
-			<label class="resume_button" for="resume_info">
-				Resume
-			</label>
-		</a>
-		<label class="menu_button" for="menu_info">&#9776;</label>
-		<label class="vcard_button" for="More_info">vCard</label>
-		<!-- Выше меню страницы -->
-<!-- 		<div class="back_color"></div> -->
+		<li>
+			<a class="fa fa-twitter" href="#">
+				<span>Twitter</span>
+			</a>
+		</li>
+		
+		<li>
+			<a class="fa fa-youtube" href="#">
+				<span>YouTube</span>
+			</a>
+		</li>
+		
+		<li>
+			<a class="fa fa-vk" href="#">
+			<span>ВКонтакте</span>
+			</a> 
+		</li>
+		<li>
+		<a class="fa fa-paper-plane" href="#">
+			<span>Telegram</span>
+			</a> 
+		</li>
+	</ul>
+	<div>
+		<table class="logo">
+			<tr class="menu_buttons">
+				<td>
+					<a href="index.html" class="menu_text">
+						<input type="button" name="" class="menu_text" value="Главная"></input>
+					</a>
+				</td>
+				<td>
+					<a href="Service.html" class="menu_text">
+					<input type="button" name="" class="menu_text" value="Услуги">
+						
+					</input>
+					</a>
+				</td>
+				<td>
+					<a href="About.html" class="menu_text">
+						<input type="button" name="" class="menu_text" value="О нас"></input>
+					</a>
+				</td>
+				<td>
+					<a href="Contact.html" class="menu_text">
+						<input type="button" name="" class="menu_text" value="Контакты"></input>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5">
+					<a href="index.html"><img src="1c_pd_logo.png"></a>
+				</td>
+				<td class="menu">
+					<!-- <a class="fa fa-bars" href="#"> -->
+				</td>
+				<td class="login_button">
+					<a href="D://1c_pd/registration page/login.html"><h2>Личный кабинет</h2></a>
+				</td>
+			</tr>
+		</table>
+	</div>
 
+	<!-- Скрипты для новостного слайдера -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
-	</body>
+	<script src="js/index.js"></script>
+	<script src="js/info_tab.js"></script>
+	<script src="js/test.js"></script>
+	<!-- Скрипты для новостного слайдера -->
+
+	<div class="footer">
+		<table>
+			<tr>
+				<td>2018 &copy; Уляхин Александр</td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+
+</body>
 </html>

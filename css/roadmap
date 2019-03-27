@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.over-wrapper {
+  overflow: hidde;
+  border: 1px solid red;
+  width: 460px;
+  height: 450px;
+  margin: 30px auto;
+}
+
+.wrapper {
+  width: 1424px;
+  height: 1400px;
+  background: #fff;
+  margin: 0 auto;
+  transform: scale(.33)translate(-1470px, -1450px);
+  text-align: center;
+  position: relative;
+}
+
+.item {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background: #07AAD8;
+  transform: rotate(45deg);
+  margin: 140px;
+  zoom: .8;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}

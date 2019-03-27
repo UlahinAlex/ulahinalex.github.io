@@ -1,0 +1,74 @@
+.road_map {
+  position: absolute;
+  top: 75vh;
+  left: 20%;
+  /*width: 100%;*/
+/*  left: 10%;*/
+  /*left: 50vw;*/
+}
+
+.road_stop {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /*background-color: rgba(245, 119, 10, 0);*/
+  /*margin-right: 10vw;*/
+  transition: 2s;
+  text-align: center;
+/*  padding-top: 40px;*/
+  /*color: rgba(255, 144, 0, 0);*/
+  font-size: 1em;
+}
+
+/*.road_stop:nth-of-type(1) div{
+  background-image: url("d://1c_pd/test2/images/call.png");
+  background-size: contain;
+}
+.road_stop:nth-of-type(2) div{
+  background-image: url("d://1c_pd/test2/images/tz.png");
+  background-size: contain;
+}*/
+
+.road_stop:hover {
+    -moz-transform: rotate(-360deg)  scale(2); /* Для Firefox */
+    -ms-transform: rotate(-360deg)  scale(2); /* Для IE */
+    -webkit-transform: rotate(-360deg)  scale(2); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-360deg)  scale(2); /* Для Opera */
+    transform: rotate(-360deg)  scale(2);
+    color: black;
+    border-radius: 0%;
+    border: 0px solid #ffa500;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    background-image: url(D://1c_pd/test2/images/stop_back.svg);
+    background-color: rgba(245, 119, 10, 1);
+}
+
+@media screen and (max-width: 1025px) {
+  .road_map {
+    left: 5%;
+  }
+
+  .road_stop {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 761px) {
+  .road_map {
+    left: 0;
+    top: 100vh;
+  }
+  .road_stop {
+    margin-right: 5vw;
+  }
+}
+@media screen and (max-width: 361px) {
+  .road_map {
+    left: 0;
+    top: 200vh;
+  }
+  .road_stop {
+    margin-right: 5vw;
+  }
+}

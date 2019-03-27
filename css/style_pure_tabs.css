@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+/*html, body {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}*/
+
+.tabs {
+  position: absolute;
+  /*top: 0;*/
+  left: 0;
+  width: 90%;
+  height: 100%;
+  border: 0px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+}
+.tabs:nth-of-type(1) {
+  background-color: rgba(255, 36, 0, 0.3);
+}
+.tabs:nth-of-type(2) {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+.tabs:nth-of-type(3) {
+  background-color: rgba(0, 191, 255, 0.3);
+}
+.tabs:nth-of-type(4) {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tabs img {
+  position: relative;
+  top: 2vh;
+/*  left: 16vw;*/
+  max-width: 40%;
+  height: auto;
+  max-height: 20%;
+
+  padding: 3px;
+  border: 0px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+input[type="radio"] {
+  position: absolute;
+  /*outline-color: rgba(21,23,25, 1);*/
+  left: 0;
+  width: 10px;
+  height: 25%;
+  outline: 10px solid;
+  outline-offset: -10px;
+  margin: 0;
+  z-index: 1;
+  cursor: pointer;
+  width: 1vh;
+}
+
+input[type="radio"]:nth-of-type(1) {
+  outline-color: rgba(255, 36, 0, 1);
+  border: 0px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 0%;
+}
+input[type="radio"]:nth-of-type(2) {
+  outline-color: rgba(255, 72, 0, 1);
+  border: 0px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 26%;
+}
+input[type="radio"]:nth-of-type(3) {
+  outline-color: rgba(255, 108, 0, 1);
+  border: 0px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 52%;
+}
+input[type="radio"]:nth-of-type(4) {
+  outline-color: rgba(255, 144, 0, 1);
+  border: 0px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 78%;
+}
+input[type="radio"]:hover {
+  outline-color: rgba(255,170,0, 1);
+  width: 2vh;
+}
+input[type="radio"]:checked {
+  outline-color: rgba(255,0,0, 1);
+  width: 2vh;
+}
+input[type="radio"]:checked + div {
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  -webkit-transition: -webkit-transform 0.4s ease 0.4s;
+  transition: -webkit-transform 0.4s ease 0.4s;
+  transition: transform 0.4s ease 0.4s;
+  transition: transform 0.4s ease 0.4s, -webkit-transform 0.4s ease 0.4s;
+}
