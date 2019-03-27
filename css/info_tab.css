@@ -118,7 +118,7 @@ span {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);*/
   width: 17.8vw;
   height: 248px;
-  background: url(D://1c_pd/test2/images/stop_front.svg);
+  background: url(/images/stop_front.svg);
   /*background-image: url(images/doc_logo.png);*/
 }
 .front:hover {
@@ -150,7 +150,7 @@ span {
  {
   width: 17.8vw;
   height: 248px;
-  background: url(D://1c_pd/test2/tab_back_cloud.svg) 100%;
+  background: url(/tab_back_cloud.svg) 100%;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -160,12 +160,12 @@ span {
 }
 
 .back_2 {
-  background: url(D://1c_pd/test2/tab_back_volm.svg) 100%;
+  background: url(/tab_back_volm.svg) 100%;
 }
 
 .back_3 {
 
-  background: url(D://1c_pd/test2/tab_back_def.svg) 100%;
+  background: url(/tab_back_def.svg) 100%;
 }
 
 .b_headline {
