@@ -3013,7 +3013,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(255, 128, 0, 0.9);
+				background: rgba(255, 128, 0, 0.5);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3769,8 +3769,8 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 235, 34, 1);
-				font-size: 0.8em;
+				color: rgba(255, 128, 0, 0.9);
+				/*font-size: 0.8em;*/
 			}
 
 			#sidebar nav a.active {
