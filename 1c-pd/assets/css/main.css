@@ -158,7 +158,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #000000;
 		}
 
 	strong, b {
@@ -3503,7 +3503,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgba(0, 0, 0, 0.55);
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3767,7 +3767,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: rgba(255, 235, 34, 1);
 			}
 
 			#sidebar nav a.active {
