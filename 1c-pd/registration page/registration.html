@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>background</title>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/style_social_button.css">
+  <style>
+  	html, body {
+	    width: 100%;
+	    height: 100%;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background: url(back_one.svg) no-repeat;
+	    background-size: 100% 100%;
+	}
+
+	input {
+		width: 99%;
+		height: 30px;
+	    background-color: rgba(255, 255, 255, 0.5);	
+	    color: black;
+	    border: 0px;
+	    padding-left: 15px;
+
+	}
+	.checkbox {
+		width: 10px;
+		height: 10px;
+	    background-color: rgba(255, 255, 255, 0.5);	
+	    color: black;
+	    border: 0px;
+	    padding-left: 15px;
+
+	}
+	input::-webkit-input-placeholder { color: color: rgba(255, 255, 255, 0.5);; }
+	.parent {
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center; 
+	    overflow: auto;   
+	}
+
+	.block {
+		width: 400px;
+	    background: url(back_two4.svg) no-repeat;
+	    background-size: 100% 100%;
+	    padding: 15px;
+	    border: 0px solid transparent;
+	    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+	    
+	}
+
+	.b1 {
+		width: 60%;
+		color: white;
+   		font-size: 14pt;
+   		font-weight: bold;
+   		background-color: rgba(0, 0, 0, 0.3);	
+   		margin-top: 15px;
+   		margin-bottom: 50px;
+	}
+
+	input[type="submit"]:hover {
+		background-color: rgba(255,255,255, 0.8);
+		color: black;
+	}
+
+	.table{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	a {
+		font-size: 7pt;
+	}
+	.registr {
+		padding-top: 10px;
+	}
+#footer {
+position: fixed; /* Фиксированное положение */
+right: 12vh;
+left: 0; bottom: 0; /* Левый нижний угол */
+padding: 10px; /* Поля вокруг текста */
+background-color: rgba(255, 255, 255, 0.1);	 /* Цвет фона */
+border: 0px solid transparent;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+color: black; /* Цвет текста */
+width: 100%; /* Ширина слоя */
+text-align: right;
+}
+  </style>
+
+</script>
+ </head>
+ <body>
+ 	<div class="parent">
+	 	<div class="block">
+	 		<div><a href="https://ulahinalex.github.io/index.html"><img src="1c_pd_logo.png" width="100%"></a></div>
+	 		<div>
+		 		<table cellspacing="5" class="table">
+		 			<tr>
+		 				<td colspan="2"><input type="text" placeholder="Фамилия"></td>
+		 			</tr>
+		 			<tr>
+		 				<td colspan="2"><input type="text" placeholder="Имя"></td>
+		 			</tr>
+		 			<tr>
+		 				<td colspan="2"><input type="tel" placeholder="Номер телефона"></td>
+		 			</tr>
+		 			<tr>
+		 				<td colspan="2"><input type="email" placeholder="E-mail"></td>
+		 			</tr>
+		 			<tr>
+		 				<td colspan="2"><input type="text" placeholder="Название организации"></td>
+		 			</tr>
+		 			<tr padding="10px">
+		 				<td colspan="2" align="center" class="registr">
+		 					Нажимая кнопку «Зарегистрироваться»:
+		 				</td>
+		 			</tr>
+		 			<tr>
+	 					<td><input type="checkbox" class="checkbox"></td>
+	 					<td><a>Я соглашаюсь создать личный кабинет 1С:Проектная Дистрибьюция. Я принимаю условия открытия и использования личного кабинета 1С:Проектная Дистрибьюция</a></td>
+		 			</tr>
+
+		 			<tr>
+		 				<td width="15px" align="top"><input type="checkbox" class="checkbox"></td>
+		 				<td>
+		 					<a>Я принимаю условия Пользовательского соглашения и даю своё согласие 1С:Проектной Дистрибьюция на обработку моей персональной информации на условиях, определенных Политикой конфиденциальности.</a>
+		 				</td>
+		 			</tr>
+		 		</table>
+		 	</div>
+	 		<div align="center">
+	 			<input type="submit" value="Зарегистрироваться" class="b1">
+	 		</div>
+	 		<div align="center">
+	 			Использовать существующие данные для входа? <a href="login.html"><font size="4">Вход</font></a>
+	 		</div>
+	 	</div>
+	</div> 
+	<div id="footer">
+		<div class="social-btns">
+				<a class="btn facebook" href="#">
+					<i class="fa fa-facebook">
+						
+					</i>
+				</a><br>
+				<a class="btn twitter" href="#">
+					<i class="fa fa-twitter">
+						
+					</i>
+				</a><br>
+				<a class="btn paper-plane" href="#">
+					<i class="fa fa-paper-plane">
+						
+					</i>
+				</a><br>
+				<a class="btn youtube" href="#">
+					<i class="fa fa-youtube">
+						
+					</i>
+				</a><br>
+				<a class="btn skype" href="#">
+					<i class="fa fa-skype">
+						
+					</i>
+				</a><br>
+			</div>
+		<div>2018 &copy; Уляхин Александр  _</div>
+	</div>
+ </body>
+</html>
