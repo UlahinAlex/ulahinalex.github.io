@@ -3922,12 +3922,12 @@ input, select, textarea {
 	@keyframes pre-loader {
 				from { 
 					top: -1vh;
-					left: -1vw;
+					left: 100vw;
 				} 
 				to {
 					opacity: 0;
 				/*transform: scale(0);*/
 					/*top: -100vh;*/
-					left: 100vw;
+					left: -100vw;
 				}
 			}
