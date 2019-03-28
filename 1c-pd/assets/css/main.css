@@ -2995,6 +2995,7 @@ input, select, textarea {
 		}
 
 		.spotlights > section > .image {
+			max-width: 444px;
 			background-position: center center;
 			background-size: cover;
 			border-radius: 0;
