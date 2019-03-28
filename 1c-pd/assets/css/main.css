@@ -3004,7 +3004,7 @@ input, select, textarea {
 		}
 
 			.spotlights > section > .image img {
-				max-width: 444px;
+				max-height: 22.5em;
 				border-radius: 0;
 				display: block;
 			}
