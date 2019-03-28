@@ -3901,3 +3901,32 @@ input, select, textarea {
 			}
 
 		}
+	/*Мои доработки*/
+	.loader {
+				position: fixed;
+				pointer-events: none;
+				visibility: visible;
+				z-index: 20;
+				top: -1vh;
+				left: -1vw;
+				transition: 1s;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				animation: pre-loader 1.5s ease 1 forwards;
+				border-width: 100em 100em 100em 100em; 
+				border-color: rgba(255,204,2,1) transparent transparent rgba(255,204,2,1); 
+			}
+
+	@keyframes pre-loader {
+				from { 
+					top: -1vh;
+					left: -1vw;
+				} 
+				to {
+					opacity: 0;
+				/*transform: scale(0);*/
+					/*top: -100vh;*/
+					left: 100vw;
+				}
+			}
