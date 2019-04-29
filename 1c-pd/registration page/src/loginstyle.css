@@ -89,8 +89,8 @@ display: none;
     float: left;
     margin-left: 6px;
 }
-.login-user-icon{background:url(https://ulahinalex.github.io/1c-pd/registration%20page/src/user.png) no-repeat 0 3px; }
-.login-pawd-icon{background:url(https://ulahinalex.github.io/1c-pd/registration%20page/src/lock.png) no-repeat 0 3px; }
+.login-user-icon{background:url(/user.png) no-repeat 0 3px; }
+.login-pawd-icon{background:url(/lock.png) no-repeat 0 3px; }
 .login-globe-icon{background:url(/custom/customimages/globe.png) no-repeat 0 0px; }
 .login-globe1-icon{background:url(/custom/customimages/globe1.png) no-repeat 0 1px; }
 
