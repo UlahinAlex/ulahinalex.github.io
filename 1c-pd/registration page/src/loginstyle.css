@@ -195,8 +195,8 @@ display: none;
     font-size: 14px;
 }
 .btn-primary {
-    background-color: #428bca;
-    border:1px solid #357ebd;
+    background-color: #000000;
+    border:1px solid #000000;
     color: #fff;
     width: 100%;
     padding:12px 20px;
