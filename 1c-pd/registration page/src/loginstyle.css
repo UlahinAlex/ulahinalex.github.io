@@ -114,7 +114,7 @@ display: none;
     width: 100%;
 }
 .alert-danger {
-    background-color: #ffecec;
+    background-color: #000000;
     border-color: #ffdde2;
     color: #a74f4f;
 }
@@ -127,7 +127,8 @@ display: none;
     display: table-cell;
 }
 .alert > .msg {
-    color: #333;
+    color: #ff3737;
+    font-weight: bold;
     line-height: 1.3;
     padding: 0 10px;
     vertical-align: top;
