@@ -20,7 +20,7 @@ display: none;
     line-height: 25px;
 }
 .login-section form{
-  background: #fff;
+  background: rgba(255,255,255, 0);
   border-radius: 0 0 3px 3px;
 }
 .input-group {
