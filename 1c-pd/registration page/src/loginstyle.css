@@ -1,0 +1,319 @@
+/*$Id $ */
+
+.hide { 
+display: none;
+}
+#loginDiv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px; /* Need a specific value to work */
+  top:20%;
+}
+.formsection{
+  display:table;
+  width:100%;
+}
+.formsection label {
+    line-height: 25px;
+}
+.login-section form{
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+}
+.input-group {
+    border-collapse: separate;
+    display: table;
+    position: relative;
+}
+.input-group-addon:first-child {
+    border-right: 0 none;
+}
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}
+.input-group .form-control {
+    float: left;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+.form-control:focus {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}
+.input-group-addon {
+    background-color: #eeeeee;
+    color: #555555;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+    padding: 4px 10px;
+    border: 1px solid #cccccc;
+}
+.input-group-addon, .input-group-btn {
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%;
+}
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}
+.form-control {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    color: #555555;
+    height: 40px;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 1px 5px;
+}
+.styled-select select> option{
+  padding:6px;
+}
+.login-user-icon, .login-pawd-icon{
+    float: left;
+    height: 17px;
+    margin-left: 6px;
+    position: relative;
+    width: 16px;
+}
+.login-globe-icon, .login-globe1-icon{
+    width: 15px;
+    height: 18px;
+    float: left;
+    margin-left: 6px;
+}
+.login-user-icon{background:url(/custom/customimages/user.png) no-repeat 0 3px; }
+.login-pawd-icon{background:url(/custom/customimages/lock.png) no-repeat 0 3px; }
+.login-globe-icon{background:url(/custom/customimages/globe.png) no-repeat 0 0px; }
+.login-globe1-icon{background:url(/custom/customimages/globe1.png) no-repeat 0 1px; }
+
+
+.alert.alert-dismissable, .alert.alert-dismissible {
+    padding-right: 35px !important;
+}
+.alert {
+    background-clip: padding-box;
+    border-radius: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 9px;
+    width: 100%;
+}
+.alert-danger {
+    background-color: #ffecec;
+    border-color: #ffdde2;
+    color: #a74f4f;
+}
+.loginas-box{
+    background-color: #d6d6d6;
+    color: #000;
+    border-radius: 0 0 3px 3px;
+}
+.alert > .msg, .alert > .sdp-glyph-status {
+    display: table-cell;
+}
+.alert > .msg {
+    color: #333;
+    line-height: 1.3;
+    padding: 0 10px;
+    vertical-align: top;
+}
+.alert-failure{
+  background: url("../images/alert-warning.png") no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+.alert-close-icon{
+  background: url("../images/alert-close.png") no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  float: right;
+  position: relative;
+    right: -21px;
+}
+.login-close{
+  background: url("../custom/customimages/login-close.png") no-repeat;
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  float: right;
+  position: relative;
+    right: -21px;
+}
+.p0{
+    padding: 0px;
+}
+.pb10{
+    padding-bottom: 10px;
+}
+.pt15{
+  padding-top: 15px;
+}
+.pt10{
+  padding-top: 10px;
+}
+.pt20{
+  padding-top: 20px;
+}
+.pl2{
+  padding-left: 2px;
+}
+.pl20{
+  padding-left: 20px!important;
+}
+.m0{
+    margin: 0px;
+}
+.ml5{
+  margin-left: 5px;
+}
+.pb3{
+  padding-bottom: 3px;
+}
+.cursor-hand{
+  cursor: pointer;
+}
+.btn {
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.btn-primary {
+    background-color: #428bca;
+    border:1px solid #357ebd;
+    color: #fff;
+    width: 100%;
+    padding:12px 20px;
+}
+.btn-default {
+    background-color: #fff;
+    border:1px solid #939292;
+    color: #333333;
+}
+.captchabox{
+  width: 135px;
+  height:30px;
+  border:1px solid #ddd;
+  padding:3px;
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+  font-size: 22px;
+  vertical-align: top;
+  box-shadow: 0px 2px 2px 0px #ccc;
+  margin-right: 2px;
+}
+.display-table{
+    display: table;
+}
+.display-cell{
+    display: table-cell;
+}
+.display-inline{
+  display: inline-block;
+}
+.loginform{
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+}
+.alert-info {
+    background-color: #f4fbff;
+    border:1px solid #d0f6ff;
+    color: #0b629a;
+    font-size: 12px;
+    box-shadow:0px 1px 2px 1px #B7B7B7;
+}
+.domaininfo .alert-info{ 
+    display: none;
+}
+.domaininfo:hover .alert-info{
+    display: block;
+    position: absolute;
+    z-index: 9;
+}
+.loginuser{
+  position: relative;
+  padding: 10px 0;
+}
+.tooltiptext {
+  display: none;
+}
+#Administrator:hover .tooltiptext, #Guest:hover .tooltiptext {
+  display: block;
+  position: absolute;
+  color: #444;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 20px;
+  background: #fff;
+  bottom:42px;
+  white-space: nowrap;
+  padding:10px;
+} 
+#Adminitrator:hover .tooltiptext{
+  left: 0px;
+} 
+#Guest:hover .tooltiptext {
+  left: 80px;
+}
+.icon-sm {
+  position: relative;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+}
+.mr5 {
+      margin-right: 5px !important;
+}
+.spinner-icon1 {
+    background: url(../images/spinner-icon1.gif) center no-repeat;
+    display: inline-block;
+}
+button .spinner-icon1 {
+  vertical-align: middle;
+  top: -1px;
+}
+.fsinner {
+	display:table;
+	padding:10px 20px 20px;
+	width:100%;
+	box-sizing:border-box;
+}
+.lockscreen{
+  height: 320px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.text-center{
+  text-align: center;
+}
+.select2-container .select2-choice .select2-arrow b {
+    background: url(../images/select2.png) no-repeat 0 8px;
+}
+.select2-container .select2-choice {
+    height: 40px;
+    line-height: 40px;
+}
+.select2-search input{
+	font-family: inherit;
+}
+#message{
+	position: relative;
+}
