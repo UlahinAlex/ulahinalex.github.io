@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ulahin Alex</title>	
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<style type="text/css">
+		* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box; 
+		}
+		a:visited {
+			color: rgba(125, 170, 255, 0);
+		}
+		body {
+			background-image: url(images/body_back.svg);
+			/*font-family: 'PT Sans', Helvetica, sans-serif;*/
+		}
+		.menu ul {
+			padding: 0 0 0 0px;
+		}
+		
+		.menu li {
+				list-style-type: none;
+				text-align: center;
+				padding: 1em;
+				transition: 0.3s;
+				color: rgba(0, 0, 0, 0.5);
+				border-right: 3px solid rgba(125, 170, 255, 0);
+				border-top: 1px solid rgba(125, 170, 255, 0.3);
+				/*border-bottom: 1px solid rgba(125, 170, 255, 0.3);*/
+		}
+		.menu li:hover {
+				color: rgb(145, 183, 251);
+				font-weight: 500;
+				border-right: 3px solid rgb(125, 170, 255);
+		}
+
+
+		.header {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 150px;
+			height: 100%;
+			background-color: rgba(255,255,255,0.75);
+			border: 0px solid blue;
+			border-radius: 0px;
+			-webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.55), inset 0px 0px 22px -1px rgba(255,255,255,0.1);
+			-moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.55), inset 0px 0px 22px -1px rgba(255,255,255,0.1);
+			box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.55), inset 0px 0px 22px -1px rgba(255,255,255,0.1);
+			/*padding: 10px; */
+		}
+		.header .header_title * {
+			left: 25px;
+
+		}
+
+		.header .header_title img {
+			position: relative;
+			overflow: hidden;
+			top: 25px;
+			
+			width: 100px;
+			/*height: 100px;*/
+			/*padding: calc((100% - 100% / 1.4142) / 2);*/
+/*			line-height: 10em;
+ 			text-align: center;	*/
+			border-radius: 50%;
+			/*transform: scale(0.5);*/
+			
+		}
+		.header .header_title h1 {
+			font-family: 'Oxygen', Helvetica, sans-serif;
+			/*font-family: 'PT Sans', Helvetica, sans-serif;*/
+
+			font-weight: 500;
+			padding-top: 10px;
+			line-height: 1em;
+			text-align: center;
+			color: rgba(125, 170, 255, 1);
+		}
+
+		.menu {
+			padding-top: 30px;
+		}
+
+		.about_content {
+			visibility: none;
+			opacity: 0;
+			position: fixed;
+			overflow: hidden; 
+			left: -110vw;
+			right: 100vw;
+
+			top: 25px;
+			bottom: 25px;
+			background-color: white;
+			-webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.35), inset 0px 0px 22px -1px rgba(255,255,255,0.1);
+			-moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.35), inset 0px 0px 22px -1px rgba(255,255,255,0.1);
+			box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.35), inset 0px 0px 22px -1px rgba(255,255,255,0.1);
+		}
+		.home_content {
+			visibility: none;
+
+			position: fixed;
+			overflow: hidden; 
+			left: calc(30vh + 150px);
+			right: 25vh;
+			/*top: calc(25px - 100vh);
+			bottom: calc(25px + 100vh);*/
+			opacity: 0;
+			text-align: center;
+			top: 25px;
+			bottom: 25px;
+
+			/*background-color: white;*/
+			/*-webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.35), inset 0px 0px 22px -1px rgba(255,255,255,0.1);
+			-moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.35), inset 0px 0px 22px -1px rgba(255,255,255,0.1);
+			box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.35), inset 0px 0px 22px -1px rgba(255,255,255,0.1);*/
+		}
+		.home_content h2 {
+			font-weight: 700;
+			margin-top: 40vh;
+			font-size: 5em;
+			/*color: rgba(125, 170, 255, 1);*/
+			/*color: rgba(255, 255, 255, 0.7);*/
+/*			-webkit-text-stroke-width: 0.25px;
+ 			-webkit-text-stroke-color: #ffffff;*/
+		}
+/*		.home_content h2:before {
+		  content: attr(data-text);
+		  position: absolute; 
+		  left: 0;
+		  right: 0;
+		  -webkit-text-stroke: .02em white;
+		}*/
+		
+		.awesome_corner {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			width: 100px;
+			height: 100px;
+			border-left: 3px solid rgb(125, 170, 255);
+			border-top: 3px solid rgb(125, 170, 255);
+		}
+		.about_content .content_head {
+			position: relative;
+			left: calc(10px + 30vw);
+			top: calc(110px - 3.95em);
+			max-width: 250px;
+			text-align: right;
+		}
+		.about_content .content_head h2 {
+			margin: 0px;
+			font-size: 3em;
+			color: rgba(0,0,0,0.05);
+		}
+		.about_content .content_head h3 {
+			display: inline-block;
+			right: 0;
+			font-weight: 500;
+			margin-top: 0px;
+			font-size: 0.8em;
+			color: rgba(255,255,255,1);
+			padding: 0.15em;
+			padding-left: 1em;
+			padding-right: 1em;
+			background-color: rgba(125, 170, 255);
+		}
+		.about_content .face {
+			position: relative;
+			left: calc(10px + 3vw);
+			right: calc(10px + 5vw);
+			top: calc(3.95em + 5px);
+			width: calc(100vw - 55vw + 200px);
+			height: 	300px;
+			max-height: 300px;
+			line-height: 1.5em;			
+
+		}
+		.about_content .face div{
+			display: inline;
+			float: left; 
+			width: 33%;
+		}
+		.about_content .face img {
+			max-width: 90%;
+		}
+		.about_content .face_text {
+			font-size: 1em;
+		}
+		.about_content .face_text li {
+			font-size: 0.8em;
+			list-style-type: none;
+			line-height: 1.3em;
+		}
+		.face_contact {
+			font-size: 0.8em;
+		}
+		.face_contact .info_list li {
+			list-style-type: none;
+		}
+		.face_contact .info_list .title {
+			font-weight: 600;
+			border-bottom: 2px solid rgb(125, 170, 255);
+			margin-right: 25px;
+		}
+
+		.face_contact .social-links {
+			/*margin-left: 5%;*/
+			margin-right: 5%;
+		}
+		.face_contact .social-links li{
+			line-height: 32px;
+			list-style-type: none;
+			display: inline;
+			float: left;
+			width: 40px;
+		}
+		.face_contact .social-links .social-button {
+			margin: 0 1px;
+   			width: 34px;
+    		height: 34px;
+			display: inline-block;
+			text-align: center;
+			font-size: 1.5em;
+			color: rgb(125, 170, 255);
+			border: 1px solid rgba(0,0,0,0.1);	
+		}
+		.face_contact .social-links .social-button:hover  {
+			color: rgba(255,255,255,1);
+			transition: 0.5s;
+			border: 1px solid rgba(0,0,0,0);
+			background-color: rgb(125, 170, 255);			
+		}
+		
+		.about_content .content_achivment {
+			position: 	relative;
+			top: 	calc(50px + 3vw);
+			left: calc(10px + 3vw);
+/*			right: calc(10px + 3vw);*/
+		}
+		.about_content .content_achivment h4 {
+			display: inline;
+			font-weight: 700;
+   			line-height: 1.5em;
+   			color: 	black;
+   			border-left: 2px solid rgb(125, 170, 255);
+   			padding-left: 	2px;
+		}
+
+		.about_content .content_achivment div{
+			display: inline;
+			float: left; 
+			width: 19%;
+			margin-left: 3%;
+			text-align: center;
+		}
+		.about_content .content_achivment .achivment img {
+			max-width: 100px;
+			
+		}
+
+		.about_content .content_achivment .achivment h5, h6 {
+			margin-top: 5px;
+
+		}
+		.about_content .content_achivment .achivment h5 {
+			
+			font-weight: 1000;
+		}
+		.about_content .content_achivment .achivment h6 {
+			color: rgba(0, 0, 0, 0.6);
+		}
+		input[type="radio"] {
+			display: none;
+		}
+		#Home_menu:checked ~ .home_content {
+			visibility: visible;
+			opacity: 100;
+			transition: 0.8s;
+			color: rgba(255, 255, 255, 0.7);
+/*			top: 25px;
+			bottom: 25px;*/
+			-moz-animation: animaciya 3s ease-in-out 0s infinite alternate;
+  			-webkit-animation: animaciya 3s ease-in-out 0s infinite alternate;
+  			-ms-animation: animaciya 3s ease-in-out 0s infinite alternate;}
+		}
+		#Home_menu:not(:checked) ~ .home_content {
+			visibility: none;
+			opacity: 0;
+			transition: 0.5s;
+			/*color: rgba(255, 255, 255, 0.0);*/
+			/*top: calc(25px - 100vh);
+			bottom: calc(25px + 100vh);*/
+			/*animation-name: animaciya; */
+			/*animation: hometext 0.3s ease;*/
+			/*animation-iteration-count: infinite;*/
+			
+		}
+		
+		#About_me_menu:checked ~ .about_content {
+			/*display: none;*/
+			opacity: 100;
+			transition: 0.8s;
+			left: calc(30vh + 150px);
+			right: 25vh;
+		}
+		#About_me_menu:not(:checked) ~ .about_content {
+			opacity: 0;
+			transition: 0.5s;
+			/*animation: outside 0.3s ease;*/
+		}
+		@keyframes animaciya {
+			0% {
+				color: rgba(255, 255, 255, 0.9);
+				text-shadow: /*-1px -1px #666,*/ 1px 1px rgba(0, 0, 0, 1);
+
+			}
+/*			25% {
+				color: rgba(255, 255, 255, 0.9);
+				
+			}
+			50% {
+				color: rgba(0, 0, 0, 0.3);
+			}*/
+			100% {
+				color: rgb(125, 170, 255);
+				text-shadow: -1px -1px rgba(255, 255, 255, 1)/*, 1px 1px #FFF*/;
+			}
+		}
+		@keyframes outside {
+		 	0% {
+		 		opacity: 100;
+				top: 25px;
+				bottom: 25px;
+				transform: scale(0.9);
+			}
+			20% {
+				opacity: 80;
+				top: 25px;
+				bottom: 25px;
+				transform: scale(0.7);
+			}
+			40% {
+				opacity: 60;
+				top: 25px;
+				bottom: 25px;
+				transform: scale(0.5);
+			}
+
+			60% {
+				opacity: 40;
+				top: 25px;
+				bottom: 25px;
+				transform: scale(0.3);
+			}
+
+			80% {
+				opacity: 20;
+				top: 25px;
+				bottom: 25px;
+				transform: scale(0.1);
+			}
+
+			100% {
+				opacity: 0;
+				top: calc(25px - 100vh);
+				bottom: calc(25px + 100vh);
+				transform: scale(0);
+			}
+			
+		}
+	</style>
+</head>
+<body>
+
+	<input type="radio" id="About_me_menu" name="menu">
+	<div class="about_content">
+		<div class="awesome_corner"></div>
+		<div class="content_head">
+			<h2>About me</h2>
+			<h3>Information Security Officer</h3>
+		</div>
+		<div class="face">
+			<div><img src="images/my_face_edited.jpg" alt=""></div>
+			<div class="face_text">
+				В рамках рабочих обязанностей осуществляю внедрение, настройку и администрирование следующих систем: 
+				<ul>
+					<li>Entensy UserGate UTM (NGFW, IPS, Anti-Fraud, BYOD, ATP, IDPS, АСУ ТП, VPN)</li>
+					<li>Kasperksy Security Center 10 (GPO, SSM)</li>
+					<li>Kaspersky Anti Targeted Attack Platform (ATP, Sandbox, IDS/IPS)</li>
+					<li>КОНФИДЕНТ DallasLock 8.0 (СЗИ, СЗИ в ВИ, СДЗ, СКН, СОВ, МЭ)</li>
+					<li>ESET Secure Authentication (2FA, UAP)</li>
+					<li>ESET Mail Security для Microsoft Exchange Server (HIPS, DC, Anti-spam, Anti-phishing)</li>
+				</ul>
+				
+			</div>
+			<div class="face_contact">
+				<ul class="info_list">
+					<li><span class="title">Age</span><span class="value">25</span></li>
+					<li><span class="title">Residence</span><span class="value">Russia Federation</span></li>
+					<li><span class="title">Address</span><span class="value">Sant-Petersburg, <img src="images/Spb_metro_logo.png" width="16px" height="16px" alt=""> Veteranov Prospect</span></li>
+					<li><span class="title">e-mail</span><span class="value"><a href="mailto:ulahinalex@niuitmo.ru">ulahinalex@niuitmo.ru</a></span></li>
+					<li><span class="title">Phone</span><span class="value">+7 991 001 62 32</span></li>
+					<li><span class="title">Skype</span><span class="value">ulahinalex</span></li>
+				</ul>
+				<ul class="social-links">
+                      <li><a class="social-button" href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                      <li><a class="social-button" href="#" title="VKontakte"><i class="fab fa-vk"></i></a></li>
+                      <li><a class="social-button" href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                      <li><a class="social-button" href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
+                      <li><a class="social-button" href="#" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+			</div>
+		</div>
+		<br><br>	
+		<div class="content_achivment">
+			<h4>Live achivment <br><br></h4>
+			<div class="achivment"><img src="images/diplom.svg" alt="">
+				<br>
+				<h5>Honours Degree</h5>
+				<!-- Красный диплом -->
+				<h6>The efforts made at the University brought results.</h6>
+				<!-- Силы приложенные в университете принесли свои результаты. -->
+			</div>
+			<div class="achivment"><img src="images/wedding_ring.svg" alt="">
+				<br>
+				<h5>Soul mate</h5>
+				<!-- Вторая половинка -->
+				<h6>I found someone I can put my money on and who motivates me to advance.</h6>
+				<!-- Нашел человека на которого могу положить и который мотивирует меня развиваться. -->
+			</div>
+			<div class="achivment"><img src="images/sert.svg" alt="">
+				<br>
+				<h5>Certification</h5>
+				<!-- Cертификации -->
+				<h6>Not years without confirmation of the competences by certificates and courses.</h6>
+				<!-- Не года без подтверждения своих компетенций сертификатами и курсами. -->
+			</div>
+			<div class="achivment"><img src="images/progress.svg" alt="">
+				<br>
+				<h5>Constant evolve</h5>
+				<!-- Постоянное развитие -->
+				<h6>I do not stay within my specialty and study related skills.</h6>
+				<!-- Не остаюсь в рамках только своей специальности и изучаю смежные навыки. -->
+			</div>
+			
+		</div>
+	</div>
+	<input type="radio" checked="checked" id="Home_menu" name="menu">
+	<div class="home_content">
+		<h2>Ulahin Alex</h2>
+	</div>
+	<input type="radio" id="Resume_menu" name="menu">
+	<div class="Resume_content">
+	</div>
+	<input type="radio" id="Contact_menu" name="menu">
+	<div class="Contact_content">
+	</div>
+	<div class="header">
+		<div class="header_title">
+			<img src="images/my_face_edited.jpg" alt="">
+			<h1>Ulahin Alex</h1>
+		</div>
+		
+		<div class="menu">
+			<ul>
+				<label class="Home_button" for="Home_menu">
+					<li>
+						Home
+					</li>
+				</label>
+				<label class="About_button" for="About_me_menu">
+					<li>
+						About me
+					</li>
+				</label>
+				<li>
+					Resume
+				</li>
+				<li>
+					Contact
+				</li>
+				<li>
+					
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>
