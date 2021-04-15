@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.63 103.63">
+  <defs>
+    <style>
+      .a, .c {
+        fill: #5ea3c9;
+      }
+
+      .a {
+        opacity: 0.05;
+      }
+
+      .b {
+        fill: none;
+        stroke: #5ea3c9;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>Монтажная область 2</title>
+  <g>
+    <circle class="a" cx="51.81" cy="51.81" r="43.25"/>
+    <circle class="b" cx="51.81" cy="51.81" r="47.01"/>
+    <path class="b" d="M27.94,23.63H77a5.84,5.84,0,0,1,5.84,5.84V75.36a0,0,0,0,1,0,0H21.67a0,0,0,0,1,0,0V29.91A6.28,6.28,0,0,1,27.94,23.63Z"/>
+    <line class="b" x1="21.67" y1="70.4" x2="82.79" y2="70.4"/>
+    <circle class="c" cx="52.23" cy="41.39" r="2.32"/>
+    <circle class="c" cx="62" cy="41.39" r="2.32"/>
+    <circle class="c" cx="71.76" cy="41.39" r="2.32"/>
+    <circle class="c" cx="52.23" cy="51.81" r="2.32"/>
+    <circle class="c" cx="62" cy="51.81" r="2.32"/>
+    <circle class="c" cx="32.7" cy="51.81" r="2.32"/>
+    <circle class="c" cx="42.47" cy="51.81" r="2.32"/>
+    <circle class="c" cx="52.23" cy="61.46" r="2.32"/>
+    <circle class="c" cx="62" cy="61.46" r="2.32"/>
+    <circle class="c" cx="32.7" cy="61.46" r="2.32"/>
+    <circle class="c" cx="42.47" cy="61.46" r="2.32"/>
+    <circle class="c" cx="71.76" cy="51.81" r="2.32"/>
+  </g>
+</svg>
